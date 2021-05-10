@@ -6,3 +6,9 @@ org/example/steps/serenity/EndUserSteps.java
  org.example.steps.serenity.EndUserSteps
 org/example/features/search/SearchByKeywordStory.java
  org.example.features.search.SearchByKeywordStory
+org/example/features/search/EmagWebScraper.java
+ org.example.features.search.EmagWebScraper
+org/example/pages/EmagPage.java
+ org.example.pages.EmagPage
+org/example/steps/serenity/EmagEndUser.java
+ org.example.steps.serenity.EmagEndUser

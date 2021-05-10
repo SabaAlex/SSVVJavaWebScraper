@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.features.search.EmagWebScraper" tests="4" skipped="0" failures="4" errors="0" timestamp="2021-05-10T18:36:29" hostname="L-ALEX-S" time="35.381">
+  <properties/>
+  <testcase name="add_cart_fail" classname="org.example.features.search.EmagWebScraper" time="12.07">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#card_grid&quot;}&#10;  (Session info: chrome=90.0.4430.93)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'L-ALEX-S', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\ALEX~1.SAB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:56159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9d4ee20a8a95a61e4cdc313aaa480ff4&#10;*** Element info: {Using=id, value=card_grid}&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'L-ALEX-S', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#card_grid&quot;}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'L-ALEX-S', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\ALEX~1.SAB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:56159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d4ee20a8a95a61e4cdc313aaa480ff4
+*** Element info: {Using=id, value=card_grid}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'L-ALEX-S', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+	at org.example.pages.EmagPage.addToCart(EmagPage.java:43)
+	at org.example.steps.serenity.EmagEndUser.add_to_cart(EmagEndUser.java:27)
+	at org.example.features.search.EmagWebScraper.add_cart_fail(EmagWebScraper.java:51)
+</failure>
+  </testcase>
+  <testcase name="add_cart_work" classname="org.example.features.search.EmagWebScraper" time="7.698">
+    <failure message="org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-sm btn-primary btn-emag yeahIWantThisProduct&quot; data-offer-id=&quot;67475811&quot; data-category-id=&quot;93&quot;&gt;...&lt;/button&gt; is not clickable at point (455, 916). Other element would receive the click: &lt;p class=&quot;cookie-banner-text mrg-btm-none&quot;&gt;...&lt;/p&gt;&#10;  (Session info: chrome=90.0.4430.93)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'L-ALEX-S', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\ALEX~1.SAB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:56159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9d4ee20a8a95a61e4cdc313aaa480ff4&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'L-ALEX-S', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-sm btn-primary btn-emag yeahIWantThisProduct&quot; data-offer-id=&quot;67475811&quot; data-category-id=&quot;93&quot;&gt;...&lt;/button&gt; is not clickable at point (455, 916). Other element would receive the click: &lt;p class=&quot;cookie-banner-text mrg-btm-none&quot;&gt;...&lt;/p&gt;
+  (Session info: chrome=90.0.4430.93)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'L-ALEX-S', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\ALEX~1.SAB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:56159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d4ee20a8a95a61e4cdc313aaa480ff4
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'L-ALEX-S', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+	at org.example.pages.EmagPage.addToCart(EmagPage.java:43)
+	at org.example.steps.serenity.EmagEndUser.add_to_cart(EmagEndUser.java:27)
+	at org.example.features.search.EmagWebScraper.add_cart_work(EmagWebScraper.java:65)
+</failure>
+  </testcase>
+  <testcase name="searching_by_keyword_s20" classname="org.example.features.search.EmagWebScraper" time="6.543">
+    <failure message="java.lang.AssertionError: &#10;Expected: a collection containing iterable containing [&quot;s20&quot;]&#10;     but: was &quot;Telefon mobil Samsung Galaxy S20 FE, Dual SIM, 128GB, 6GB RAM, 5G, Cloud Navy&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: a collection containing iterable containing [&quot;s20&quot;]
+     but: was &quot;Telefon mobil Samsung Galaxy S20 FE, Dual SIM, 128GB, 6GB RAM, 5G, Cloud Navy&quot;
+	at org.example.steps.serenity.EmagEndUser.should_see_item_title(EmagEndUser.java:45)
+	at org.example.features.search.EmagWebScraper.searching_by_keyword_s20(EmagWebScraper.java:26)
+</failure>
+  </testcase>
+  <testcase name="searching_by_keyword_fgzdadfgsfdgh" classname="org.example.features.search.EmagWebScraper" time="7.962">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#card_grid&quot;}&#10;  (Session info: chrome=90.0.4430.93)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'L-ALEX-S', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\ALEX~1.SAB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:56159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9d4ee20a8a95a61e4cdc313aaa480ff4&#10;*** Element info: {Using=id, value=card_grid}&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'L-ALEX-S', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#card_grid&quot;}
+  (Session info: chrome=90.0.4430.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'L-ALEX-S', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\ALEX~1.SAB\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:56159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d4ee20a8a95a61e4cdc313aaa480ff4
+*** Element info: {Using=id, value=card_grid}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'L-ALEX-S', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: unknown
+	at org.example.pages.EmagPage.getTitle(EmagPage.java:36)
+	at org.example.steps.serenity.EmagEndUser.should_see_item_title(EmagEndUser.java:44)
+	at org.example.features.search.EmagWebScraper.searching_by_keyword_fgzdadfgsfdgh(EmagWebScraper.java:38)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 5553
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1620671792.674][WARNING]: This version of ChromeDriver has not been tested with Chrome version 90.
+May 10, 2021 9:36:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
