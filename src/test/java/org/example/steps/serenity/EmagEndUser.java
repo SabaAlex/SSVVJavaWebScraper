@@ -4,6 +4,7 @@ import net.thucydides.core.annotations.Step;
 import org.example.pages.EmagPage;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
@@ -25,23 +26,27 @@ public class EmagEndUser {
     @Step
     public void add_to_cart(){
         emagPage.addToCart();
+    }
 
-        emagPage.closeModal();
+    @Step
+    public void should_see_total(String price) {
+        String asdqasd = emagPage.getTotalCart();
 
-        emagPage.check_cart();
+        assertThat(asdqasd, containsString(price));
     }
 
     @Step
     public void should_see_total_empty() {
-        ArrayList<String> asdqasd = new ArrayList<String>();
-        asdqasd.add(emagPage.getTotalCart());
-        assertThat(asdqasd, hasItem(contains("")));
+        String asdqasd = emagPage.getTotalCart();
+
+        assertThat(asdqasd, isEmptyOrNullString());
     }
 
     @Step
     public void should_see_item_title(String item) {
         String asdqasd = emagPage.getTitle();
-        assertThat(asdqasd, hasItem(item));
+
+        assert asdqasd.toLowerCase(Locale.ROOT).contains(item);
     }
 
     @Step

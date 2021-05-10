@@ -40,7 +40,7 @@ public class EmagPage extends PageObject {
     public void addToCart(){
         WebElementFacade productList = find(By.id("card_grid"));
 
-        productList.findElements(By.className("card-item")).get(0).findElement(By.className("yeahIWantThisProduct")).click();
+        productList.find(By.className("card-footer")).find(By.tagName("form")).submit();
     }
 
     public void closeModal(){
@@ -48,6 +48,6 @@ public class EmagPage extends PageObject {
     }
 
     public String getTotalCart(){
-        return find(By.className("vendor-summary-total-price")).findElement(By.cssSelector("money-int")).getText();
+        return find(By.className("vendor-summary-total-price")).findElement(By.className("money-int")).getText();
     }
 }

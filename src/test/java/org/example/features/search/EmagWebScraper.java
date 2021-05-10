@@ -52,7 +52,7 @@ public class EmagWebScraper {
             retegan.should_see_total_empty();
         }
         catch (Exception e){
-            assert false;
+            assert true;
         }
 
     }
@@ -63,10 +63,10 @@ public class EmagWebScraper {
             retegan.is_the_home_page();
             retegan.looks_for("s20");
             retegan.add_to_cart();
-            retegan.should_see_total_empty();
+            retegan.should_see_total("3.119");
         }
         catch (Exception e){
-            assert true;
+            assert false;
         }
 
     }

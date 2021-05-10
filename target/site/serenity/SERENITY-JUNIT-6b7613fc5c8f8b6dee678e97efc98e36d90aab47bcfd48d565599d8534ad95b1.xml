@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="org.example.features.search.EmagWebScraper" skipped="0" tests="1" time="18.63" timestamp="2021-05-10 10:12:35"><testcase classname="org.example.features.search.EmagWebScraper" name="Add cart work"><failure message="&#10;Expected: a collection containing iterable containing [&quot;&quot;]&#10;     but: was &quot;3.119&quot;" type="java.lang.AssertionError">
+Expected: a collection containing iterable containing [""]
+     but: was "3.119"</failure><system-err>
+Expected: a collection containing iterable containing [""]
+     but: was "3.119"&#13;
+org.example.steps.serenity.EmagEndUser.should_see_total_empty(EmagEndUser.java:35)&#13;
+org.example.features.search.EmagWebScraper.add_cart_work(EmagWebScraper.java:66)&#13;
+</system-err></testcase></testsuite>
