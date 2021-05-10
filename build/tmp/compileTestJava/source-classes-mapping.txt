@@ -1,0 +1,8 @@
+org/example/features/search/package-info.java
+ org.example.features.search.package-info
+org/example/pages/DictionaryPage.java
+ org.example.pages.DictionaryPage
+org/example/steps/serenity/EndUserSteps.java
+ org.example.steps.serenity.EndUserSteps
+org/example/features/search/SearchByKeywordStory.java
+ org.example.features.search.SearchByKeywordStory

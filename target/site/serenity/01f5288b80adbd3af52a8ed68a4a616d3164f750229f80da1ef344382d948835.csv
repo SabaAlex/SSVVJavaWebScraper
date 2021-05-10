@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Search by keyword story","Searching by keyword f1 should display the corresponding article","SUCCESS","2021-04-20T19:07:21.1706107+03:00[Europe/Bucharest]","0.0","9.39"
+"Search by keyword story","Searching by keyword banana should display the corresponding article","SUCCESS","2021-04-20T19:07:31.4245366+03:00[Europe/Bucharest]","0.0","4.79"
+"Search by keyword story","Searching by keyword liger should display the corresponding article","SUCCESS","2021-04-20T19:07:36.2916545+03:00[Europe/Bucharest]","0.0","3.99"
+"Search by keyword story","Searching by keyword apple should display the corresponding article","SUCCESS","2021-04-20T19:07:40.3587925+03:00[Europe/Bucharest]","0.0","5.9"
